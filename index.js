@@ -9,6 +9,8 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
+console.log("hi");
+
 mongoose.connect("mongodb://localhost:27017/machinecollector",{useNewUrlParser:true,useUnifiedTopology: true})
         .then(() => console.log('mongoDB Connected'))
         .catch(err => console.log(err));
