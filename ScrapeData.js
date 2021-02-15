@@ -7,9 +7,9 @@ const {constructUrls} = require('./utils');
 const getData  = async()=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
-        maxConcurrency: 20,
+        maxConcurrency: 10,
         timeout: 5*60*1000,
-        puppeteerOptions:{headless:false,defaultViewport:null}
+        puppeteerOptions:{headless:true,defaultViewport:null}
     });
     
     await cluster.task(async ({page,data:webData})=>{
