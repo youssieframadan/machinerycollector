@@ -18,7 +18,7 @@ mongoose.connect("mongodb://localhost:27017/machinecollector",{useNewUrlParser:t
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(cors());
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 var Router = express.Router();
 
