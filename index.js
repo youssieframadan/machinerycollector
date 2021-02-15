@@ -9,7 +9,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
-mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true,useUnifiedTopology: true})
+mongoose.connect("mongodb://localhost:27017/machinecollector",{useNewUrlParser:true,useUnifiedTopology: true})
         .then(() => console.log('mongoDB Connected'))
         .catch(err => console.log(err));
 
@@ -35,4 +35,4 @@ app.use('/api',Router);
 app.listen(port);
 console.log('Connected to server on port: '+port);
 
-getData();
+// getData();
