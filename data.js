@@ -1,8 +1,3 @@
-const { mongo } = require('mongoose');
-
-require('dotenv').config();
-const mongoUri = process.env.MONGO_URI;
-
 const blacklistedWords = ['hire','manual','parts','book','part','book','bucket','attachments']
 
 const machineData = [
@@ -512,6 +507,5 @@ const websiteData = [
     
 ];
 exports.websiteData = websiteData;
-exports.mongoUri = mongoUri;
 exports.blacklistedWords = blacklistedWords;
 exports.machineData = machineData;

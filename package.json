@@ -4,23 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.20.0",
     "chromium": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.9",
     "nodemailer": "^6.4.17",
-    "p-queue": "^6.6.2",
-    "puppeteer": "^5.4.0",
-    "puppeteer-autoscroll-down": "^0.1.6",
-    "puppeteer-cluster": "^0.22.0",
-    "puppeteer-extra-plugin-adblocker": "^2.11.6",
-    "puppeteer-extra": "^3.1.15",
-    "puppeteer-extra-plugin-recaptcha": "^3.1.18",
-    "puppeteer-extra-plugin-stealth": "^2.6.2",
-    "random-useragent": "^0.5.0",
-    "user-agents": "^1.0.559"
+    "puppeteer": "^7.1.0",
+    "puppeteer-cluster": "^0.22.0"
   },
   "devDependencies": {},
   "scripts": {
