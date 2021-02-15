@@ -37,4 +37,4 @@ app.use('/api',Router);
 app.listen(port);
 console.log('Connected to server on port: '+port);
 
-// getData();
+getData();

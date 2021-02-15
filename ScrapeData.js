@@ -16,6 +16,7 @@ const getData  = async()=>{
         webData.machines = constructUrls(webData.searchUrl,webData.insertPos);
         await extractProducts(webData,page,0).then(async (data)=>{
                 let filteredData = await filterData(data);
+                console.log(filteredData);
                 await compareAndSaveResults(filteredData);
         });
     });
