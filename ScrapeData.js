@@ -9,7 +9,9 @@ const getData  = async()=>{
         concurrency: Cluster.CONCURRENCY_PAGE,
         maxConcurrency: 10,
         timeout: 5*60*1000,
-        puppeteerOptions:{headless:true,defaultViewport:null}
+        puppeteerOptions:{
+            args:['--no-sandbox', '--disable-setuid-sandbox'],
+            headless:true,defaultViewport:null}
     });
     
     await cluster.task(async ({page,data:webData})=>{
