@@ -8,10 +8,15 @@ const getData  = async()=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
         maxConcurrency: 10,
-        timeout: 5*60*1000,
+        timeout: 60*1000,
         puppeteerOptions:{
-            args:['--no-sandbox', '--disable-setuid-sandbox'],
-            headless:true,defaultViewport:null}
+            args:[
+            '--no-sandbox', 
+            '--disable-setuid-sandbox'
+        ],
+        headless:true,
+        executablePath:"/usr/bin/chromium-browser"
+    }
     });
     
     await cluster.task(async ({page,data:webData})=>{
