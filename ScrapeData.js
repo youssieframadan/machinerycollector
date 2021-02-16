@@ -24,14 +24,19 @@ const getData  = async(counter)=>{
         webData.machines = constructUrls(webData.searchUrl,webData.insertPos);
         await extractProducts(webData,page,0).then(async (data)=>{
                 let filteredData = await filterData(data);
-                console.log(filteredData);
                 await compareAndSaveResults(filteredData);
         });
     });
-
+    cluster.on('taskerror', (err, data, willRetry) => {
+        if (willRetry) {
+          console.warn(`Encountered an error while crawling ${data.domain}. ${err.message}\nThis job will be retried`);
+        } else {
+          console.error(`Failed to crawl ${data.domain}: ${err.message}`);
+        }
+    });
     for(index in websiteData){
         try{
-            cluster.execute(websiteData[index]);
+            cluster.queue(websiteData[index]);
         }catch(e){
             console.log(e)
         }
