@@ -41,6 +41,6 @@ const getData  = async()=>{
     await cluster.idle();
     await cluster.close();
     await sendEmail();
-    await getData();
+    // await getData();
 };
 module.exports = getData;
