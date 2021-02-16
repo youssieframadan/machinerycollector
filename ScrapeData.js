@@ -3,12 +3,11 @@ const {extractProducts} = require('./productsScraper');
 const {websiteData} = require('./data');
 const {compareAndSaveResults,filterData} = require('./resultAnalysis');
 const {constructUrls} = require('./utils');
-const {sendEmail} = require('./send-email');
-
+const sendEmail = require('./send-email')
 const getData  = async(counter)=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
-        maxConcurrency: 10,
+        maxConcurrency: 15,
         timeout: 5*60*1000,
         puppeteerOptions:{
             args:[
