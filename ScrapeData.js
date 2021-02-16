@@ -24,7 +24,7 @@ const getData  = async(counter)=>{
         webData.machines = constructUrls(webData.searchUrl,webData.insertPos);
         await extractProducts(webData,page,0).then(async (data)=>{
                 let filteredData = await filterData(data);
-                
+                console.log(filteredData);
                 await compareAndSaveResults(filteredData);
         });
     });
@@ -40,7 +40,7 @@ const getData  = async(counter)=>{
     console.log(counter)
     await cluster.idle();
     await cluster.close();
-    await sendEmail();
-    await getData(counter++);
+    sendEmail();
+    getData(counter++);
 };
 module.exports = getData;
