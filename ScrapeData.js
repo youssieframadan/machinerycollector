@@ -3,6 +3,7 @@ const {extractProducts} = require('./productsScraper');
 const {websiteData} = require('./data');
 const {compareAndSaveResults,filterData} = require('./resultAnalysis');
 const {constructUrls} = require('./utils');
+const {sendEmail} = require('./send-email');
 
 const getData  = async()=>{
     const cluster = await Cluster.launch({
@@ -34,6 +35,7 @@ const getData  = async()=>{
 
     await cluster.idle();
     await cluster.close();
-    // await getData();
+    await sendEmail();
+    await getData();
 };
 module.exports = getData;
