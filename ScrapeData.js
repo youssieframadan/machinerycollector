@@ -8,7 +8,7 @@ const getData  = async()=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
         maxConcurrency: 10,
-        timeout: *60*1000,
+        timeout: 5*60*1000,
         puppeteerOptions:{
             args:[
             '--no-sandbox', 
