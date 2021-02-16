@@ -24,13 +24,18 @@ const getData  = async()=>{
         webData.machines = constructUrls(webData.searchUrl,webData.insertPos);
         await extractProducts(webData,page,0).then(async (data)=>{
                 let filteredData = await filterData(data);
-                console.log(filteredData);
+                
                 await compareAndSaveResults(filteredData);
         });
     });
 
     for(index in websiteData){
-        cluster.execute(websiteData[index]);
+        try{
+            cluster.execute(websiteData[index]);
+        }catch(e){
+            console.log(e)
+        }
+        
     }
 
     await cluster.idle();
