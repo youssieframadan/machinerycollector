@@ -20,6 +20,7 @@ const extractProducts = async (websiteData,page,index) =>{
                 brand:webData.machines[index].brand,
                 machineName:webData.machines[index].machineName,
                 domain:webData.domain,
+                emailSent:false,
                 country:webData.country
             }
             )),

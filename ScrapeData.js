@@ -43,9 +43,10 @@ const getData  = async(counter)=>{
         
     }
     console.log(counter)
+    counter = counter+1;
     await cluster.idle();
     await cluster.close();
     sendEmail();
-    getData(counter++);
+    getData(counter);
 };
 module.exports = getData;
