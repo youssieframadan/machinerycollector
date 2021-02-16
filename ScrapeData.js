@@ -5,7 +5,7 @@ const {compareAndSaveResults,filterData} = require('./resultAnalysis');
 const {constructUrls} = require('./utils');
 const {sendEmail} = require('./send-email');
 
-const getData  = async()=>{
+const getData  = async(counter)=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
         maxConcurrency: 10,
@@ -37,10 +37,10 @@ const getData  = async()=>{
         }
         
     }
-
+    console.log(counter)
     await cluster.idle();
     await cluster.close();
     await sendEmail();
-    // await getData();
+    await getData(counter++);
 };
 module.exports = getData;
