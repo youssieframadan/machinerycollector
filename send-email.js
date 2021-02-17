@@ -7,7 +7,7 @@ const sendmail = require('sendmail')({
 const product = require('./models/product');
 
 async function sendEmail(){
-  console.log
+  console.log("sending email");
   products = await product.find({emailSent:false}).then((product)=>{
     var data=""
     product.forEach((item)=>{
