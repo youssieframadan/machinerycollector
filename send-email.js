@@ -31,14 +31,14 @@ if(data!==""){
   console.log("sending email");
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
-      console.log(error);
+      console.log("error sending email");
     } else {
       console.log('E-mail successfully sent: ' + info.response);
+      await product.updateMany({emailSent:false}, {"$set":{"emailSent": true}});
     }
   });
 }
 })
-  await product.updateMany({emailSent:false}, {"$set":{"emailSent": true}});
 }
 
 module.exports = sendEmail;
