@@ -13,7 +13,6 @@ async function sendEmail(){
       +"Product Link:"+'\n'+item["link"]+'\n'+'\n'
       
     })
-    console.log(data)
     var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -29,6 +28,7 @@ async function sendEmail(){
     text: data,
   };
 if(data!==""){
+  console.log("sending email");
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
