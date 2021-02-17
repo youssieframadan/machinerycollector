@@ -7,7 +7,6 @@ const sendmail = require('sendmail')({
 const product = require('./models/product');
 
 async function sendEmail(){
-  console.log("sending email");
   products = await product.find({emailSent:false}).then((product)=>{
     var data=""
     product.forEach((item)=>{
@@ -33,6 +32,7 @@ async function sendEmail(){
   //   text: data,
   // };
 if(data!==""){
+  console.log("sending email");
   sendmail({
     from: 'machinerycollector087@gmail.com',
     to: 'youssief.r@gmail.com',
