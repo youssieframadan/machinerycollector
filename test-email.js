@@ -1,4 +1,8 @@
-const sendmail = require('sendmail')();
+const sendmail = require('sendmail')(
+    {
+        smtpPort: 2525
+    }
+);
 
 sendmail({
     from: 'machinerycollector087@gmail.com',
