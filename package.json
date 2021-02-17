@@ -9,8 +9,7 @@
     "mongoose": "^5.10.9",
     "nodemailer": "^6.4.17",
     "puppeteer": "^7.1.0",
-    "puppeteer-cluster": "^0.22.0",
-    "sendemail": "^4.0.1"
+    "puppeteer-cluster": "^0.22.0"
   },
   "devDependencies": {},
   "scripts": {

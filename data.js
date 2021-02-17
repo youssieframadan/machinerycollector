@@ -6,96 +6,96 @@ const machineData = [
         category:'wheel loader',
         machineName:'910'
     },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'920'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'930'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'936'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'936E'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'936F'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'950'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'950E'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'950B'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'950H'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'966E'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'966F'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'966D'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'966H'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'970F'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'972G'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'972H'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'980H'
-    // },
-    // {
-    //     brand:'Caterpillar',
-    //     category:'wheel loader',
-    //     machineName:'980G'
-    // },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'920'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'930'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'936'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'936E'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'936F'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'950'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'950E'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'950B'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'950H'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'966E'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'966F'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'966D'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'966H'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'970F'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'972G'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'972H'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'980H'
+    },
+    {
+        brand:'Caterpillar',
+        category:'wheel loader',
+        machineName:'980G'
+    },
 ]
 
 const websiteData = [
@@ -506,7 +506,6 @@ const websiteData = [
     },
     
 ];
-console.log(websiteData.length*machineData.length);
 exports.websiteData = websiteData;
 exports.blacklistedWords = blacklistedWords;
 exports.machineData = machineData;
