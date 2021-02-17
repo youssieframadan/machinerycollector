@@ -29,7 +29,7 @@ async function sendEmail(){
   };
 if(data!==""){
   console.log("sending email");
-  transporter.sendMail(mailOptions, function(error, info){
+  transporter.sendMail(mailOptions, async function(error, info){
     if (error) {
       console.log("error sending email");
     } else {
