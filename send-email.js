@@ -3,9 +3,9 @@ const product = require('./models/product');
 
 async function sendEmail(){
 
-  products = await product.find({emailSent:false}).then((product)=>{
+  products = await product.find({emailSent:false}).then((prod)=>{
     var data=""
-    product.forEach((item)=>{
+    prod.forEach((item)=>{
       
       data += "product Title: "+item["title"]+'\n'
       +"product price: "+item["price"]+'\n'
