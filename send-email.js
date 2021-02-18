@@ -23,7 +23,7 @@ async function sendEmail(){
 //Arabcorporationsupply@gmail.com
   var mailOptions = {
     from: 'machinerycollector087@gmail.com',
-    to: 'Arabcorporationsupply@gmail.com,adamgces@gmail.com',
+    to: 'Arabcorporationsupply@gmail.com,adamgces@gmail.com,youssief.r@gmail.com',
     subject: 'machinery collector',
     text: data,
   };
