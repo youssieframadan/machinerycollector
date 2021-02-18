@@ -22,7 +22,7 @@ async function sendEmail(){
   });
 //Arabcorporationsupply@gmail.com,adamgces@gmail.com,
   var mailOptions = {
-    from: 'machinerycollector087@gmail.com',
+    from: 'Arabcorporationsupply@gmail.com,adamgces@gmail.com,machinerycollector087@gmail.com',
     to: 'youssief.r@gmail.com',
     subject: 'machinery collector',
     text: data,
