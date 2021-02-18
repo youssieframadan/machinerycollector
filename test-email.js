@@ -1,15 +1,20 @@
-const sendmail = require('sendmail')(
-    {
-        smtpPort: 2525
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'machinerycollector087@gmail.com',
+      pass: 'nLI77&SFGObufUyDrZ'
     }
-);
+});
 
-sendmail({
+var mailOptions = {
     from: 'machinerycollector087@gmail.com',
     to: 'youssief.r@gmail.com',
     subject: 'machinery collector',
-    html: 'Hooray NodeJS!!!'
-}, function (err, reply) {
-  console.log(err && err.stack)
-  console.dir(reply)
+    text: "data",
+};
+
+transporter.sendMail(mailOptions, async function(error, info){
+    if(error) console.log(error);
+    else console.log(info);
 })
