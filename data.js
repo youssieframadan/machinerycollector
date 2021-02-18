@@ -102,7 +102,7 @@ const websiteData = [
     
         {
             
-        searchUrl:'https://avcar.today/heavy/?mark=caterpillar&model=&country=',
+        searchUrl:'https://avcar.today/heavy/?mark=caterpillar&model=&country=usa',
         insertPos:50,
         productSelector:'div.row div.col-md-6',
         nameSelector:'div.card-header',
@@ -110,20 +110,19 @@ const websiteData = [
         linkSelector:'div.card-body a',
         imgSelector:'a.ml-3 img.lazy',
         country:'USA',
-        domain:'https://avcar.today/'
+        domain:'avcar.today/usa'
     },
-        {
-            
-        searchUrl:'https://www.auta.com/search/?s=&zip=',
-        insertPos:31,
-        productSelector:'div.vehicle-wrapper ',
-        nameSelector:'h3 a.notranslate',
-        priceSelector:'div.convert-currency',
-        linkSelector:'h3 a.notranslate',
-        imgSelector:'div div.m-block a img',
-        country:'USA',
-        domain:'https://www.auta.com/search/?s=Caterpillar&distance=100'
-    },
+    // { 
+    //     searchUrl:'https://www.auta.com/search/?s=&zip=',
+    //     insertPos:31,
+    //     productSelector:'div.vehicle-wrapper ',
+    //     nameSelector:'h3 a.notranslate',
+    //     priceSelector:'div.convert-currency',
+    //     linkSelector:'h3 a.notranslate',
+    //     imgSelector:'div div.m-block a img',
+    //     country:'USA',
+    //     domain:'https://www.auta.com/search/?s=Caterpillar&distance=100'
+    // },
     {
             
         searchUrl:'https://www.agriads.com/us/search?c=613&q=&location=&l=&r=',
@@ -134,7 +133,7 @@ const websiteData = [
         linkSelector:'div.items-details h2 a',
         imgSelector:'img.img-thumbnail',
         country:'USA',
-        domain:'https://www.agriads.com/search?c=613&_token=XNm0dpKvevFjSHm6fvWZVp0KqZ1DZV7j3IiEQp4t&orderBy=priceAsc'
+        domain:'agriads.com'
     },
         {
             
@@ -146,19 +145,19 @@ const websiteData = [
         linkSelector:'button.email-consultant-search-trigger a.green',
         imgSelector:'span.productblock-lazy-images',
         country:'New Zealand',
-        domain:'https://www.turners.co.nz/Trucks-Machinery/Used-Trucks-and-Machinery-for-Sale/?sortorder=2,ASC&pagesize=24&pageno=1&industry=construction'
+        domain:'turners.co.nz'
     },
-    {
-        searchUrl:'https://www.trademe.co.nz/Browse/SearchResults.aspx?searchString=&type=Search&searchType=3797&user_region=100&user_district=0&generalSearch_keypresses=0&generalSearch_suggested=0&generalSearch_suggestedCategory=&rsqid=ad46bfc0482c4c85abc6909a98ea868d-005&condition=used',
-        insertPos:65,
-        productSelector:'tm-search-card-switcher',
-        nameSelector:'div.info div.title',
-        priceSelector:'div.tm-motors-search-card__price',
-        linkSelector:'a.tm-motors-search-card__link',
-        imgSelector:'div.supergrid-listing div.image',
-        country:'New Zealand',
-        domain:'https://www.trademe.co.nz/'
-    },
+    // {
+    //     searchUrl:'https://www.trademe.co.nz/Browse/SearchResults.aspx?searchString=&type=Search&searchType=3797&user_region=100&user_district=0&generalSearch_keypresses=0&generalSearch_suggested=0&generalSearch_suggestedCategory=&rsqid=ad46bfc0482c4c85abc6909a98ea868d-005&condition=used',
+    //     insertPos:65,
+    //     productSelector:'tm-search-card-switcher',
+    //     nameSelector:'div.info div.title',
+    //     priceSelector:'div.tm-motors-search-card__price',
+    //     linkSelector:'a.tm-motors-search-card__link',
+    //     imgSelector:'div.supergrid-listing div.image',
+    //     country:'New Zealand',
+    //     domain:'https://www.trademe.co.nz/'
+    // },
     {
         searchUrl:'https://www.farmtrader.co.nz/search/type-loaders/subtype-wheel/keywords-',
         insertPos:72,
@@ -168,7 +167,7 @@ const websiteData = [
         linkSelector:'div.reswrap-title a',
         imgSelector:'div.img-large a img.lazyload',
         country:'New Zealand',
-        domain:'https://www.farmtrader.co.nz/'
+        domain:'farmtrader.co.nz'
     },
     {
         searchUrl:'https://www.dealsonwheels.co.nz/search/type-loaders/subtype-wheel/keywords-',
@@ -179,7 +178,7 @@ const websiteData = [
         linkSelector:'div.reswrap-title a',
         imgSelector:'div.img-large a img.lazyload',
         country:'New Zealand',
-        domain:'https://www.dealsonwheels.co.nz/search/type-loaders'
+        domain:'www.dealsonwheels.co.nz'
     },
     {
         searchUrl:'https://www.agdealer.com/listings?q=',
@@ -190,7 +189,7 @@ const websiteData = [
         linkSelector:'h2.listing-result__title a',
         imgSelector:'div.listing-result__photo img',
         country:'canda',
-        domain:'https://www.agdealer.com'
+        domain:'agdealer.com'
     },
     {
         searchUrl:'https://www.autotrader.ca/heavy-equipment/wheel%20loader/keyword//?rcp=100&rcs=0&srt=9&prx=-1&loc=m5H2n2&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch',
@@ -201,7 +200,7 @@ const websiteData = [
         linkSelector:'a.result-title.click',
         imgSelector:'img.photo-image',
         country:'canda',
-        domain:'https://www.autotrader.ca/'
+        domain:'autotrader.ca'
     },
     {
         searchUrl:'https://www.farms.com/used-farm-equipment/used-search-result.aspx?q=&category=tractors&sub-category=loader%20tractors',
@@ -212,7 +211,7 @@ const websiteData = [
         linkSelector:'div.search-result-details h2 a',
         imgSelector:'img.lazy',
         country:'canda',
-        domain:'https://www.farms.com/'
+        domain:'farms.com'
     },
     {
         searchUrl:'https://www.supplypost.com/listings?q=',
@@ -223,7 +222,7 @@ const websiteData = [
         linkSelector:'a.js-track-event',
         imgSelector:'img.media-object',
         country:'canda',
-        domain:'https://www.supplypost.com//'
+        domain:'supplypost.com'
     },
     {
         searchUrl:'https://nlbuysell.com/search-results.php?keywords=&cat1=33&cat2=&region=&sortby=datedesc',
@@ -234,7 +233,7 @@ const websiteData = [
         linkSelector:'div.img a',
         imgSelector:'div.img a img',
         country:'canda',
-        domain:'https://nlbuysell.com/'
+        domain:'nlbuysell.com'
     },
     {
         searchUrl:'https://www.justheavyequipment.com.au/equipment-for-sale/search?keyword=',
@@ -249,8 +248,8 @@ const websiteData = [
     },
      {
         
-        searchUrl:'https://www.gumtree.com.au/s-automotive//k0c9299',
-        insertPos:40,
+        searchUrl:'https://www.gumtree.com.au/s-construction-vehicles-equipment//k0c9299',
+        insertPos:61,
         productSelector:'div.user-ad-collection-new-design__wrapper--row a.user-ad-row-new-design',
         nameSelector:'span.user-ad-row-new-design__title-span',
         priceSelector:'span.user-ad-price-new-design__price',
@@ -303,17 +302,17 @@ const websiteData = [
         country:'Australia',
         domain:'truckdealers.com.au'
     },
-    {
-        searchUrl:'https://www.truckworld.com.au/search/?query=k~-v~1-z~15-',
-        insertPos:46,
-        productSelector:'div.search-result',
-        nameSelector:'p.item-desc',
-        priceSelector:'p.list-price',
-        linkSelector:'a.list-title',
-        imgSelector:'div.listing-slider img',
-        country:'Australia',
-        domain:'truckworld.com.au'
-    },
+    // {
+    //     searchUrl:'https://www.truckworld.com.au/search/?query=k~-v~1-z~15-',
+    //     insertPos:46,
+    //     productSelector:'div.search-result',
+    //     nameSelector:'p.item-desc',
+    //     priceSelector:'p.list-price',
+    //     linkSelector:'a.list-title',
+    //     imgSelector:'div.listing-slider img',
+    //     country:'Australia',
+    //     domain:'truckworld.com.au'
+    // },
     {
         searchUrl:'https://www.plantandequipment.com/en-au/machinery?search_string=',
         insertPos:64,
@@ -356,7 +355,7 @@ const websiteData = [
         linkSelector:'div.card-body a',
         imgSelector:'div.card a img.lazy',
         country:'Australia',
-        domain:'avcar.today'
+        domain:'avcar.today/au'
     },
     {
         searchUrl:'https://themachinemarket.com/listings/?advert_country=Australia&query=',
