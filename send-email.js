@@ -40,5 +40,5 @@ if(data!==""){
 }
 })
 }
-
-module.exports = sendEmail;
+sendEmail()
+// module.exports = sendEmail;
