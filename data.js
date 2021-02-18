@@ -102,7 +102,7 @@ const websiteData = [
     
         {
             
-        searchUrl:'https://avcar.today/heavy/?mark=caterpillar&model=&country=usa',
+        searchUrl:'https://avcar.today/heavy/?mark=caterpillar&model=&country=us',
         insertPos:50,
         productSelector:'div.row div.col-md-6',
         nameSelector:'div.card-header',
