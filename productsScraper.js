@@ -5,7 +5,7 @@ const extractProducts = async (websiteData,page,index) =>{
     }else{
         
         await page.goto(websiteData.machines[index].url,{waitUntil:'domcontentloaded',timeout:0});
-        await autoScroll(page);
+        // await autoScroll(page);
         
         let products = await page.evaluate((webData,index) => Array.from(document.querySelectorAll(webData.productSelector)).map(compact => (
             {
