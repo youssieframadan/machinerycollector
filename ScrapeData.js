@@ -7,7 +7,7 @@ const sendEmail = require('./send-email')
 const getData  = async(counter)=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
-        maxConcurrency: 10,
+        maxConcurrency: 5,
         timeout: 5*60*1000,
         puppeteerOptions:{
             args:[
