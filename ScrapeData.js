@@ -7,8 +7,8 @@ const sendEmail = require('./send-email')
 const getData  = async(counter)=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
-        maxConcurrency: 4,
-        timeout: 5*60*1000,
+        maxConcurrency: 1,
+        timeout: 60*1000,
         puppeteerOptions:{
             args:[
             '--no-sandbox', 
@@ -23,7 +23,7 @@ const getData  = async(counter)=>{
         webData.machines = constructUrls(webData.searchUrl,webData.insertPos);
         await extractProducts(webData,page,0).then(async (data)=>{
                 let filteredData = await filterData(data);
-                console.log("crawled "+ webData.domain);
+                console.log("crawled "+filteredData.length+" product from "+ webData.domain);
                 await compareAndSaveResults(filteredData);
         });
     });

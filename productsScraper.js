@@ -1,14 +1,11 @@
 const {autoScroll} = require('./utils');
-function imagesHaveLoaded() {
-    return Array.from(document.images).every((i) => i.complete);
-}
 const extractProducts = async (websiteData,page,index) =>{
     if(index>websiteData.machines.length-1){
         return []
     }else{
         
         await page.goto(websiteData.machines[index].url,{waitUntil:'domcontentloaded',timeout:0});
-        // await autoScroll(page);
+        await autoScroll(page);
         
         let products = await page.evaluate((webData,index) => Array.from(document.querySelectorAll(webData.productSelector)).map(compact => (
             {
