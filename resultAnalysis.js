@@ -10,8 +10,8 @@ const filterData =async data=>{
         product.title = product.title.replace(/[^0-9a-z-\s]/gi, '')
         if(product.title.toLowerCase().match(new RegExp('\\b'+product.machineName+'\\b')))
             if(product.title.toLowerCase().includes('cat'))
-                console.log(true)
-        return
+                return true
+        return false
     })
     //remove blacklisted words
     filterdData = filterdData.filter((product)=>{
