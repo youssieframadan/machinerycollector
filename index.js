@@ -34,12 +34,5 @@ app.use('/api',Router);
 
 app.listen(port);
 console.log('Connected to server on port: '+port);
-const newProduct = new product({
-    country:"hello",
-    domain:"hello.com",
-    price:"1998131",
-    link:"hi.com/56661",
-    title:"hello 966d"
-})
-newProduct.save();
+
 getData(1);
