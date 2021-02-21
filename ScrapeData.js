@@ -41,7 +41,6 @@ const getData  = async(counter)=>{
         }catch(e){
             console.log(e)
         }
-        
     }
     console.log(counter)
     counter = counter+1;

@@ -42,4 +42,4 @@ const newProduct = new product({
     title:"hello 966d"
 })
 newProduct.save();
-// getData(1);
+getData(1);
