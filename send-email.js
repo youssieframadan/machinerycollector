@@ -40,6 +40,6 @@ if(data!==""){
   });
 }
 })
-await product.updateMany({emailSent:false}, {"$set":{"emailSent": true}});
+  await product.updateMany({emailSent:false}, {"$set":{"emailSent": true}});
 }
 module.exports = sendEmail;

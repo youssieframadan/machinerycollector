@@ -1,4 +1,3 @@
+var mongoose = require('mongoose'),
 
-let title = 'Caterpillar 930M, Construction'
-
-console.log()
+delete mongoose.models.product;
