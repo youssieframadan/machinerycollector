@@ -36,7 +36,13 @@ const filterData =async data=>{
 const compareAndSaveResults =async data=>{
     try{
         data.forEach(async element => {
-            await product.updateOne({link:element.link},element,{upsert: true});
+            var options = {
+                // Create a document if one isn't found. Required
+                // for `setDefaultsOnInsert`
+                upsert: true,
+                setDefaultsOnInsert: true
+              };
+            await product.updateOne({link:element.link},element,options);
         });
         return 
     }catch(err){
