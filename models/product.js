@@ -37,8 +37,6 @@ const productSchema = new Schema({
     emailSent:{
         type:Boolean,
         default:false,
-        required:true
     },
-    expire_at: {type: Date, default: Date.now, expires: 2*24*60*60}
 })
 module.exports = mongoose.model('product',productSchema);

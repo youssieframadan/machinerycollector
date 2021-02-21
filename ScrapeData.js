@@ -7,7 +7,7 @@ const sendEmail = require('./send-email')
 const getData  = async(counter)=>{
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_PAGE,
-        maxConcurrency: 3,
+        maxConcurrency: 10,
         timeout: 5*60*1000,
         puppeteerOptions:{
             args:[
@@ -25,6 +25,7 @@ const getData  = async(counter)=>{
                 let filteredData = await filterData(data);
                 console.log("crawled "+filteredData.length+" product from "+ webData.domain);
                 await compareAndSaveResults(filteredData);
+                await sendEmail();
         });
     });
     cluster.on('taskerror', (err, data, willRetry) => {
@@ -46,7 +47,6 @@ const getData  = async(counter)=>{
     counter = counter+1;
     await cluster.idle();
     await cluster.close();
-    await sendEmail();
     getData(counter);
 };
 module.exports = getData;

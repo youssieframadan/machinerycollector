@@ -5,9 +5,15 @@ const product = require('./models/product');
 
 const filterData =async data=>{
     let filterdData = []
+    //remove unwanted machines
     filterdData = data.filter((product)=>{
-        return product.title.toLowerCase().includes(product.machineName.toLowerCase()) ? true:false;
+        product.title = product.title.replace(/[^0-9a-z-\s]/gi, '')
+        if(product.title.toLowerCase().match(new RegExp('\\b'+product.machineName+'\\b')))
+            if(product.title.toLowerCase().includes('cat'))
+                console.log(true)
+        return
     })
+    //remove blacklisted words
     filterdData = filterdData.filter((product)=>{
         let remove = false;
         for(index in blacklistedWords){
