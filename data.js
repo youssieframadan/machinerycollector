@@ -99,7 +99,141 @@ const machineData = [
 ]
 
 const websiteData = [
-    
+    {
+        searchUrl:'https://equipdom.com/search?keyword=',
+        insertPos:36,
+        productSelector:'div.latest_post',
+        nameSelector:'a.latest_item_name',
+        priceSelector:'span.value',
+        linkSelector:'a.latest_item_name',
+        imgSelector:'div.postimg img',
+        country:'Europe',
+        domain:'equipdom.com'
+    },
+    {
+        searchUrl:'https://www.fritidsmarkedet.dk/maskiner/wheel-loaders-c2b490293-f18b-4f0d-a549-89b456e19b35?brand_id=917e13a7-a390-444a-a660-4bb10677296b&query=',
+        insertPos:144,
+        productSelector:'article.machine a.row',
+        nameSelector:'h3.text-18px',
+        priceSelector:'div.price-group p.price span[property="price"]',
+        linkSelector:'article.machine a',
+        imgSelector:'div.images figure.image',
+        country:'Europe',
+        domain:'https://www.fritidsmarkedet.dk/maskiner/entrepren-rmaskiner-cf268d600-625f-4650-ab91-b3cfef4c9f0d?created_date=NOW-2DAYS&sort=created_date+desc'
+    },
+    {
+        searchUrl:'https://www.industrialmachines.net/search/result.aspx?s=&index=4&cond=0',
+        insertPos:56,
+        productSelector:'table.featured tbody',
+        nameSelector:'div.makeModelTitle',
+        priceSelector:'div.price-group ',
+        linkSelector:'div.featured table.featured tbody tr td.left a',
+        imgSelector:'a img.mob-small-off',
+        country:'Europe',
+        domain:'https://www.industrialmachines.net/'
+    },
+    //SELECTION PROBLEM
+    // {
+    //     searchUrl:'https://www.landwirt.com/search.html?q=&page=1&index=usedmachines%2Cclassifieds&brands=cat',
+    //     insertPos:39,
+    //     productSelector:'div.gmmtrefferinnen',
+    //     nameSelector:'div.gmmtreffertext div.Gebrauchtmaschinen h4',
+    //     priceSelector:'div.mobile-price',
+    //     linkSelector:'div.gmmtreffer div.gmmtrefferinnen a',
+    //     imgSelector:'img.img-responsive',
+    //     country:'Europe',
+    //     domain:'https://www.landwirt.com/'
+    // },
+    {
+        searchUrl:'https://www.macchineedili.it/it/ricerca-macchine-edili?keys=',
+        insertPos:60,
+        productSelector:'li.views-fluid-grid-item ',
+        nameSelector:'div.views-field-title span.field-content a',
+        priceSelector:'div.views-field-field-quotation div.field-content',
+        linkSelector:'div.views-field-title span.field-content a',
+        imgSelector:'div.field-content a img',
+        country:'Europe',
+        domain:'https://www.macchineedili.it/it'
+    },
+    //SELECTION PROBLEM
+    // {
+    //     searchUrl:'https://www.machineseeker.com/fy/inserat/inseratliste/index?stichwort=&kategorieId=820',
+    //     insertPos:70,
+    //     productSelector:'div.card-body div.row',
+    //     nameSelector:'a.text-decoration-none h5.text-dark span.mr-1',
+    //     priceSelector:'div.text-dark span',
+    //     linkSelector:'div.card-body div.row div.d-flex a.text-decoration-none',
+    //     imgSelector:'img.img-fluid',
+    //     country:'Europe',
+    //     domain:'https://www.machineseeker.com/'
+    // },
+    {
+        searchUrl:'https://www.machinetrack.nl/nl/zoeken?keyword=&brand=5&page=1',
+        insertPos:46,
+        productSelector:'table.table div.row',
+        nameSelector:'table.table div.row a h3',
+        priceSelector:'div.dataPrice span',
+        linkSelector:'table.table div.row a',
+        imgSelector:'img.img-responsive',
+        country:'Europe',
+        domain:'https://www.machinetrack.nl/nl/gebruikte/bouwmachines'
+    },
+    {
+        searchUrl:'https://de.machinerypark.com/caterpillar-baumaschinen-lader?condition=0&limit=12&list=sale&q=',
+        insertPos:93,
+        productSelector:'div.card-body div.mpOfferItem',
+        nameSelector:'div.card-body div.mpOfferItem p.mb-3 a',
+        priceSelector:'a strong.mpPrice',
+        linkSelector:'div.card-body div.mpOfferItem p.mb-3 a',
+        imgSelector:'div.mpImgBg',
+        country:'Europe',
+        domain:'https://de.machinerypark.com/suchen?area_id=2&condition=0&limit=12&list=sale&result=true'
+    },
+    {
+        searchUrl:'https://www.usatomacchine.it/usato/ricerca?t=80&m=79&q=',
+        insertPos:55,
+        productSelector:'div.bloccoAnnunci div.annuncio',
+        nameSelector:'div.annuncio-info h2',
+        priceSelector:'span.annuncio-price',
+        linkSelector:'span.annuncio-price a',
+        imgSelector:'div.anteprima img',
+        country:'Europe',
+        domain:'https://www.usatomacchine.it'
+    },
+    {
+        searchUrl:'https://www.myscrapmachine.com/en/search?category=wheel-loaders&q=',
+        insertPos:66,
+        productSelector:'div.Search_listing__1tM6u',
+        nameSelector:'p.ListingCard_title__22zSe',
+        priceSelector:'p.ListingCard_price__23SLy',
+        linkSelector:'a.ListingCard_card__1WYV6',
+        imgSelector:'div.ListingCard_cover__29jLR',
+        country:'Europe',
+        domain:'https://www.myscrapmachine.com/en/'
+    },
+    // Need to look at
+    // {
+    //     searchUrl:'https://www.nettikone.com/maarakennus/kuormaajat/caterpillar?id_cat_sub_type=1210&q=',
+    //     insertPos:84,
+    //     productSelector:'div.listingVifUrl ',
+    //     nameSelector:'div.make_model_link',
+    //     priceSelector:'div.price_block div.main_price',
+    //     linkSelector:'div.listingVifUrl a.tricky_link ',
+    //     imgSelector:'div.img_box',
+    //     country:'Europe',
+    //     domain:'https://www.nettikone.com/maarakennus?new=H&page=1&sortCol=enrolldate&ord=DESC'
+    // },
+    {
+        searchUrl:'https://www.otomoto.pl/maszyny-budowlane/caterpillar/q-/?search%5Border%5D=created_at_first%3Adesc&search%5Bcountry%5D=',
+        insertPos:55,
+        productSelector:'div.offers article',
+        nameSelector:'div.offer-item__title h2',
+        priceSelector:'span.offer-price__currency',
+        linkSelector:'div.offer-item__title h2 a.offer-title__link',
+        imgSelector:'div.offer-item__photo img.lazyloaded',
+        country:'Europe',
+        domain:'https://www.otomoto.pl/maszyny-budowlane/?search%5Border%5D=created_at_first%3Adesc&search%5Bcountry%5D='
+    },
         {
             
         searchUrl:'https://avcar.today/heavy/?mark=caterpillar&model=&country=us',
@@ -458,17 +592,7 @@ const websiteData = [
     //     country:'Europe',
     //     domain:'camionsupermarket.it'
     // },
-    {
-        searchUrl:'https://classified.fwi.co.uk/used/?q=',
-        insertPos:37,
-        productSelector:'div.contents a.block',
-        nameSelector:'div.contents a.block h4',
-        priceSelector:'div[itemprop="price"]',
-        linkSelector:'div.contents a.block',
-        imgSelector:'img.h-full',
-        country:'Europe',
-        domain:'classified.fwi.co.uk'
-    },
+    
     //USES CAPTCH
     // {
     //     searchUrl:'https://classified.fwi.co.uk/used/?q=',
@@ -481,17 +605,6 @@ const websiteData = [
     //     country:'Europe',
     //     domain:'classified.fwi.co.uk'
     // },  
-    {
-        searchUrl:'https://equipdom.com/search?keyword=',
-        insertPos:36,
-        productSelector:'div.latest_post',
-        nameSelector:'a.latest_item_name',
-        priceSelector:'span.value',
-        linkSelector:'a.latest_item_name',
-        imgSelector:'div.postimg img',
-        country:'Europe',
-        domain:'equipdom.com'
-    },
     {
         searchUrl:'https://www.europe-construction-equipment.com/used-construction-equipment/f2/construction-equipment-ads.html?q=',
         insertPos:111,
