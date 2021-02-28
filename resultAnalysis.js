@@ -42,7 +42,7 @@ const compareAndSaveResults =async data=>{
                 upsert: true,
                 setDefaultsOnInsert: true
               };
-            await product.updateOne({link:element.link},element,options);
+            await product.updateOne({product_id:element.product_id},element,options);
         });
         return 
     }catch(err){

@@ -616,7 +616,184 @@ const websiteData = [
         country:'Europe',
         domain:'https://www.europe-construction-equipment.com/'
     },
+    {
+        searchUrl:'https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=&_sacat=58161&LH_TitleDesc=0&_sop=10&_odkw=caterpillar&_osacat=58161&LH_ItemCondition=4&rt=nc',
+        insertPos:75,
+        productSelector:'div.s-item__wrapper',
+        nameSelector:'h3.s-item__title',
+        priceSelector:'span.s-item__price',
+        linkSelector:'a.s-item__link',
+        imgSelector:'img.s-item__image-img',
+        country:'USA',
+        domain:'https://www.ebay.com/'
+    },
+    {
+        searchUrl:'https://www.equipmentjournal.com/used/loaders/wheel_loaders/?longitude=0&latitude=0&make=&model=&dealer=&province=&country=&type=50&qSearch=&limit=10&offset=0&order=desc&sort=Year',
+        insertPos:140,
+        productSelector:'div.card-views div.card-view',
+        nameSelector:'h4.eq-name',
+        priceSelector:'div.eq-price b',
+        linkSelector:'h4.eq-name a',
+        imgSelector:'div.eq-image img',
+        country:'USA',
+        domain:'https://www.equipmentjournal.com'
+    },
+    {
+        searchUrl:'https://www.fastline.com/construction-equipment-for-sale/listings/caterpillar-910-wheeled-loaders/results?category=Wheeled+Loaders&manufacturer=Caterpillar&model=&page=1',
+        insertPos:162,
+        productSelector:'div.tile--large--content',
+        nameSelector:'h4 a.headline--four--lowercase',
+        priceSelector:'h3.headline--three',
+        linkSelector:'h4 a.headline--four--lowercase',
+        imgSelector:'div.eq-image img',
+        country:'USA',
+        domain:'https://www.fastline.com/'
+    },
+    {
+        searchUrl:'https://geebo.com/construction-farm-equipment/search/type/1-heavy-equipment-/mobile//distance/50/?q=',
+        insertPos:100,
+        productSelector:'table.element',
+        nameSelector:'td h3 a.title',
+        priceSelector:'div.price',
+        linkSelector:'td h3 a.title',
+        imgSelector:'div.eq-image img',
+        country:'USA',
+        domain:'https://geebo.com/'
+    },
+    {
+        searchUrl:'https://heavyequipmentseller.com/classified-listings/?condition=used-equipment&s=&make=caterpillar&serie%5B%5D=wheel-loader-compact-105-hp&serie%5B%5D=wheel-loader-106-200-hp&serie%5B%5D=wheel-loader-201-350-hp&serie%5B%5D=wheel-loader-350-hp&serie%5B%5D=wheel-loader-other',
+        insertPos:81,
+        productSelector:'div.listing-list-loop ',
+        nameSelector:'div.title a',
+        priceSelector:'div.normal-price span span',
+        linkSelector:'div.title a',
+        imgSelector:'div.image-inner img',
+        country:'USA',
+        domain:'https://heavyequipmentseller.com/'
+    },
+    {
+        searchUrl:'https://ironsearch.com/equipment/search/results?DistanceKms=8047&EquipmentTypeIsSet=true&Options=0%3D&TypeCode=WL&TypeDescription=Wheel%20Loader',
+        insertPos:101,
+        productSelector:'ul.search-results__listings li a.org--listing-summary',
+        nameSelector:'div.wrapper h2',
+        priceSelector:'div.price',
+        linkSelector:'li a.org--listing-summary',
+        imgSelector:'div.image-inner img',
+        country:'USA',
+        domain:'https://ironsearch.com/'
+    },
+    {
+        searchUrl:'https://www.kitmondo.com/cat/used-heavy-machinery/?year_from=&year_to=&manufacturers=Caterpillar&query=&sort_by=-date_created&show_results=63',
+        insertPos:103,
+        productSelector:'div.product-list-row',
+        nameSelector:'div.product-info h3 a',
+        priceSelector:'div.product-price a.price',
+        linkSelector:'div.product-info h3 a',
+        imgSelector:'div.image a img.img-fill-background',
+        country:'USA',
+        domain:'https://www.kitmondo.com/'
+    },
+    {
+        searchUrl:'https://www.lumbermenonline.com/find-for-sale/search-for?keyword=',
+        insertPos:65,
+        productSelector:'div.itmContainer',
+        nameSelector:'h2.itmTitle a',
+        priceSelector:'h2.itmPrice',
+        linkSelector:'h2.itmTitle a',
+        imgSelector:'a img.img-fluid',
+        country:'USA',
+        domain:'https://www.lumbermenonline.com/'
+    },
+    {
+        searchUrl:'https://www.machinerypete.com/listings/loaders-and-lifts/wheel-loaders/caterpillar?custom_search=&hours%5Bmax%5D=&hours%5Bmin%5D=&limit=12&manual_sort=&old_location_str=&price%5Bmax%5D=&price%5Bmin%5D=&sort_term=most_photos&year%5Bmax%5D=&year%5Bmin%5D=&zip_code=&zip_miles=100000',
+        insertPos:97,
+        productSelector:'div.listing-wrapper',
+        nameSelector:'div.listing-name a',
+        priceSelector:'div.listing-price',
+        linkSelector:'div.listing-name a',
+        imgSelector:'div.listing-image img',
+        country:'USA',
+        domain:'https://www.machinerypete.com/'
+    },
+    {
+        searchUrl:'https://machinesforall.com/machines/?keys=&field_machines_manufacturer_value=caterpillar&field_machines_model_value=&field_machines_year_value=All&field_machines_category_tid=54&field_machines_serial_number_value=&field_machines_location_country=All',
+        insertPos:42,
+        productSelector:'div.machine-list-card',
+        nameSelector:'div.ma-full-title a h3',
+        priceSelector:'span.mc3-price',
+        linkSelector:'div.ma-full-title a ',
+        imgSelector:'div.machine-list-cover-image',
+        country:'USA',
+        domain:'https://machinesforall.com/'
+    },
+    {
+        searchUrl:'https://www.mylittlesalesman.com/used-wheel-loaders-for-sale-i1c41f0m0r2?ptid=1&q=&s=1',
+        insertPos:82,
+        productSelector:'div.content-card div.content-card-inner div.prcont',
+        nameSelector:'h2.iln a',
+        priceSelector:'span div.custom-h',
+        linkSelector:'h2.iln a',
+        imgSelector:'a img.img-responsive ',
+        country:'USA',
+        domain:'https://www.mylittlesalesman.com/'
+    },
     
+    {
+        searchUrl:'https://vehicles.oodle.com/used-vehicles/for-sale/?q=caterpillar+966&oldq=&inbs=1',
+        insertPos:74,
+        productSelector:'ol li',
+        nameSelector:'span.listing-title a.title-link',
+        priceSelector:'span.price span',
+        linkSelector:'span.listing-title a.title-link',
+        imgSelector:'a img.img-responsive ',
+        country:'USA',
+        domain:'https://vehicles.oodle.com/'
+    },
+    {
+        searchUrl:'http://rhinomachinery.com/Search.aspx?action=search&type=20&make=18&model=',
+        insertPos:74,
+        productSelector:'div.product div.innerpadding5_10 ',
+        nameSelector:'div.producttitle a',
+        priceSelector:'div.askingprice span',
+        linkSelector:'div.producttitle a',
+        imgSelector:'div.boxNoBackground img ',
+        country:'USA',
+        domain:'http://rhinomachinery.com/'
+    },
+    
+    {
+        searchUrl:'https://themachinemarket.com/listings/?_form_scheme_id=79021&reveal_hidden=1&query=&advert_category%5B%5D=174&advert_condition%5B%5D=used',
+        insertPos:83,
+        productSelector:'div.featured-box ',
+        nameSelector:'div.feature-content h4 a',
+        priceSelector:'div.xt-advert-price ',
+        linkSelector:'div.feature-content h4 a',
+        imgSelector:'div.featured-box figure a img.img-fluid ',
+        country:'USA',
+        domain:'https://themachinemarket.com/'
+    },
+    {
+        searchUrl:'https://trademachines.com/loaders?refinementList%5Bmanufacturer.name%5D%5B0%5D=Caterpillar&refinementList%5Bproduct.name%5D%5B0%5D=&page=1',
+        insertPos:131,
+        productSelector:'li.tm-lot-item',
+        nameSelector:'div.tm-lot-list-title h3 a span',
+        priceSelector:'div.xt-advert-price ',
+        linkSelector:'div.tm-lot-list-title h3 a',
+        imgSelector:'div.tm-lot-list-image img',
+        country:'USA',
+        domain:'https://trademachines.com/'
+    },
+    {
+        searchUrl:'http://www.usediron.com/Xhtml/Equipment/P2/Loader-Wheel/CATERPILLAR/ResultsByType.html?Model=&submit=View+Selected',
+        insertPos:93,
+        productSelector:'tr.EquipmentBrief',
+        nameSelector:'td:nth-child(2) div.DataRow a.Href',
+        priceSelector:'td:nth-child(5) div.DataRow a.Href',
+        linkSelector:'td:nth-child(1) div.DataRow a.Href',
+        imgSelector:'div.tm-lot-list-image img',
+        country:'USA',
+        domain:'https://usediron.com/'
+    },
 ];
 exports.websiteData = websiteData;
 exports.blacklistedWords = blacklistedWords;

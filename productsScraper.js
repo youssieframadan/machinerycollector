@@ -1,3 +1,4 @@
+const product = require('./models/product');
 const {autoScroll} = require('./utils');
 const extractProducts = async (websiteData,page,index) =>{
     if(index>websiteData.machines.length-1){
@@ -16,10 +17,12 @@ const extractProducts = async (websiteData,page,index) =>{
                 brand:webData.machines[index].brand,
                 machineName:webData.machines[index].machineName,
                 domain:webData.domain,
-                country:webData.country
+                country:webData.country,
             }
             )),
             websiteData,index);
+            products.map(product => product.product_id = product.link+'-'+product.title+'-'+product.price);
+            
         return products.concat(await extractProducts(websiteData,page,index+=1));
     }
 };
