@@ -20,10 +20,10 @@ async function sendEmail(){
       pass: 'nLI77&SFGObufUyDrZ'
     }
   });
-//Arabcorporationsupply@gmail.com,adamgces@gmail.com,
+//Arabcorporationsupply@gmail.com,adamgces@gmail.com,khaled.mohamed.5811@gmail.com
   var mailOptions = {
     from: 'machinerycollector087@gmail.com',
-    to: 'Arabcorporationsupply@gmail.com,adamgces@gmail.com,youssief.r@gmail.com,khaled.mohamed.5811@gmail.com',
+    to: 'youssief.r@gmail.com',
     subject: 'machinery collector',
     text: data,
   };

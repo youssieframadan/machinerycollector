@@ -119,7 +119,7 @@ const websiteData = [
         linkSelector:'article.machine a',
         imgSelector:'div.images figure.image',
         country:'Europe',
-        domain:'https://www.fritidsmarkedet.dk/maskiner/entrepren-rmaskiner-cf268d600-625f-4650-ab91-b3cfef4c9f0d?created_date=NOW-2DAYS&sort=created_date+desc'
+        domain:'https://www.fritidsmarkedet.dk/'
     },
     {
         searchUrl:'https://www.industrialmachines.net/search/result.aspx?s=&index=4&cond=0',
@@ -176,7 +176,7 @@ const websiteData = [
         linkSelector:'table.table div.row a',
         imgSelector:'img.img-responsive',
         country:'Europe',
-        domain:'https://www.machinetrack.nl/nl/gebruikte/bouwmachines'
+        domain:'https://www.machinetrack.nl/'
     },
     {
         searchUrl:'https://de.machinerypark.com/caterpillar-baumaschinen-lader?condition=0&limit=12&list=sale&q=',
@@ -187,7 +187,7 @@ const websiteData = [
         linkSelector:'div.card-body div.mpOfferItem p.mb-3 a',
         imgSelector:'div.mpImgBg',
         country:'Europe',
-        domain:'https://de.machinerypark.com/suchen?area_id=2&condition=0&limit=12&list=sale&result=true'
+        domain:'https://de.machinerypark.com/'
     },
     {
         searchUrl:'https://www.usatomacchine.it/usato/ricerca?t=80&m=79&q=',
@@ -232,7 +232,7 @@ const websiteData = [
         linkSelector:'div.offer-item__title h2 a.offer-title__link',
         imgSelector:'div.offer-item__photo img.lazyloaded',
         country:'Europe',
-        domain:'https://www.otomoto.pl/maszyny-budowlane/?search%5Border%5D=created_at_first%3Adesc&search%5Bcountry%5D='
+        domain:'https://www.otomoto.pl/'
     },
         {
             
@@ -269,8 +269,7 @@ const websiteData = [
         country:'USA',
         domain:'agriads.com'
     },
-        {
-            
+    {   
         searchUrl:'https://www.turners.co.nz/Trucks-Machinery/Used-Trucks-and-Machinery-for-Sale/?searchfor=&industry=construction%20&%20forestry&category=loaders&subcategories=wheel%20loader&pageno=1&sortorder=2,ASC&pagesize=24',
         insertPos:89,
         productSelector:'div.supergrid-bucket a div.supergrid-listing',
