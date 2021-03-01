@@ -737,17 +737,17 @@ const websiteData = [
         domain:'https://www.mylittlesalesman.com/'
     },
     
-    {
-        searchUrl:'https://vehicles.oodle.com/used-vehicles/for-sale/?q=caterpillar+966&oldq=&inbs=1',
-        insertPos:74,
-        productSelector:'ol li',
-        nameSelector:'span.listing-title a.title-link',
-        priceSelector:'span.price span',
-        linkSelector:'span.listing-title a.title-link',
-        imgSelector:'a img.img-responsive ',
-        country:'USA',
-        domain:'https://vehicles.oodle.com/'
-    },
+    // {
+    //     searchUrl:'https://vehicles.oodle.com/used-vehicles/for-sale/?q=caterpillar+966&oldq=&inbs=1',
+    //     insertPos:74,
+    //     productSelector:'ol li',
+    //     nameSelector:'span.listing-title a.title-link',
+    //     priceSelector:'span.price span',
+    //     linkSelector:'span.listing-title a.title-link',
+    //     imgSelector:'a img.img-responsive ',
+    //     country:'USA',
+    //     domain:'https://vehicles.oodle.com/'
+    // },
     {
         searchUrl:'http://rhinomachinery.com/Search.aspx?action=search&type=20&make=18&model=',
         insertPos:74,
